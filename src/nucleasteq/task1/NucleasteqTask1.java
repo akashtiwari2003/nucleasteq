@@ -28,7 +28,7 @@ public class NucleasteqTask1 {
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
             String[] data = line.split(",");
-            String salary = data.length > 4 ? data[4] : "";
+            String salary = data.length > 4 ? data[4] : "0";
             employees.add(new Employee(data[0], data[1], data[2], data[3], salary));
         }
         scanner.close();
